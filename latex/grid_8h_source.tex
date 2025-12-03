@@ -1,0 +1,47 @@
+\doxysection{grid.\+h}
+\hypertarget{grid_8h_source}{}\label{grid_8h_source}\mbox{\hyperlink{grid_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ GRID\_SIZE\ 24}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ DISPLAY\_SIZE\ (GRID\_SIZE\ *\ 2\ -\/\ 1)}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ LINK\_R\ \ \ "{}╱"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ LINK\_L\ \ \ "{}╲"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ GRID\ \{\(\backslash\)}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\{'.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.',\ '.'\},\(\backslash\)}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\}}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{grid_8c_aeaa8432e48251380b64dd51dfa3b045b}{grid}}[\mbox{\hyperlink{grid_8h_a08246606c233e7785a497c09672f366f}{GRID\_SIZE}}][\mbox{\hyperlink{grid_8h_a08246606c233e7785a497c09672f366f}{GRID\_SIZE}}];}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00042\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{grid_8h_a98e13dffc83fcb0ea6bc853b70fbe775}{printPeg}}(\textcolor{keywordtype}{int}\ rowIndex,\ \textcolor{keywordtype}{int}\ columnIndex);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00047\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{grid_8h_a9b80dd6d8e29a4aa4b47a07388baff19}{printGrid}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00056\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{grid_8h_a663e8eb5dd1913c1160ceac554df8e21}{gridChangeColorOfCell}}(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ column,\ \textcolor{keywordtype}{char}\ color);}
+
+\end{DoxyCode}

@@ -1,0 +1,41 @@
+\doxysection{win\+\_\+logic.\+h File Reference}
+\hypertarget{win__logic_8h}{}\label{win__logic_8h}\index{win\_logic.h@{win\_logic.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}links.\+h"{}}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_point}{Point}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{win__logic_8h_ab7818bed5eb4174425fcc6c5a88867df}{has\+Player\+Won}} (char player, \mbox{\hyperlink{struct_link}{Link}} \mbox{\hyperlink{links_8c_aa914a9c72053d35ea0cd4a4f0704b1ed}{all\+Links}}\mbox{[}$\,$\mbox{]}, int \mbox{\hyperlink{links_8c_a11569a6107c2e70a909e93a038bc2628}{number\+Of\+Links}})
+\begin{DoxyCompactList}\small\item\em Checks if a player has won depending on the positions of the pegs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{win__logic_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{win__logic_8h_ab7818bed5eb4174425fcc6c5a88867df}\index{win\_logic.h@{win\_logic.h}!hasPlayerWon@{hasPlayerWon}}
+\index{hasPlayerWon@{hasPlayerWon}!win\_logic.h@{win\_logic.h}}
+\doxysubsubsection{\texorpdfstring{hasPlayerWon()}{hasPlayerWon()}}
+{\footnotesize\ttfamily \label{win__logic_8h_ab7818bed5eb4174425fcc6c5a88867df} 
+int has\+Player\+Won (\begin{DoxyParamCaption}\item[{char}]{player}{, }\item[{\mbox{\hyperlink{struct_link}{Link}}}]{all\+Links}{\mbox{[}$\,$\mbox{]}, }\item[{int}]{number\+Of\+Links}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a player has won depending on the positions of the pegs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The players whose turn is now \\
+\hline
+{\em all\+Links} & The all\+Links array \\
+\hline
+{\em number\+Of\+Links} & The number\+Of\+Links variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns if the player has won 
+\end{DoxyReturn}

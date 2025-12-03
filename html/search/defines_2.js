@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['bg_5fblack_0',['BG_BLACK',['../holi_8h.html#a0e5ebbe291d95cf1b8f1661252722fe0',1,'holi.h']]],
+  ['bg_5fblue_1',['BG_BLUE',['../holi_8h.html#a9afd14c731aa8c62d9471913c1b23b9f',1,'holi.h']]],
+  ['bg_5fcyan_2',['BG_CYAN',['../holi_8h.html#a21ef237e1c4d69656729da4b34c31d8b',1,'holi.h']]],
+  ['bg_5fgreen_3',['BG_GREEN',['../holi_8h.html#ac351fb4567ed6655a5b39769cc5dfd04',1,'holi.h']]],
+  ['bg_5fmagenta_4',['BG_MAGENTA',['../holi_8h.html#ac08aa3f07e012f1b0edafa632d5300ba',1,'holi.h']]],
+  ['bg_5fred_5',['BG_RED',['../holi_8h.html#ac317d04c219b630f9c36b0241d9d4be7',1,'holi.h']]],
+  ['bg_5fwhite_6',['BG_WHITE',['../holi_8h.html#a6beded3f171517df3902c52f79f6fea2',1,'holi.h']]],
+  ['bg_5fyellow_7',['BG_YELLOW',['../holi_8h.html#ab31fe3e74b1137650d30ede5c9b86218',1,'holi.h']]],
+  ['black_8',['BLACK',['../holi_8h.html#a7b3b25cba33b07c303f3060fe41887f6',1,'holi.h']]],
+  ['blink_9',['BLINK',['../holi_8h.html#a38eec52a7dccb94ff563e30eda32c891',1,'holi.h']]],
+  ['blue_10',['BLUE',['../holi_8h.html#a79d10e672abb49ad63eeaa8aaef57c38',1,'holi.h']]],
+  ['bold_11',['BOLD',['../holi_8h.html#a26cdbb1a00213c810caccf21cd33a631',1,'holi.h']]],
+  ['bold_5fblack_12',['BOLD_BLACK',['../holi_8h.html#a7b6e436cdd428f9257bbc177197b81e7',1,'holi.h']]],
+  ['bold_5fblue_13',['BOLD_BLUE',['../holi_8h.html#a085159bf5578cb27037b75eda75b3b83',1,'holi.h']]],
+  ['bold_5fcyan_14',['BOLD_CYAN',['../holi_8h.html#a62f05b1e00666a7e59003a86c1ca68d6',1,'holi.h']]],
+  ['bold_5fgreen_15',['BOLD_GREEN',['../holi_8h.html#a08800e737f550f758120b8e717789a56',1,'holi.h']]],
+  ['bold_5fmagenta_16',['BOLD_MAGENTA',['../holi_8h.html#a0533bbc2534a2c8075e060896c9bd2d8',1,'holi.h']]],
+  ['bold_5forange_17',['BOLD_ORANGE',['../holi_8h.html#ae8cc8e2491b50ad838cba58cf058eec0',1,'holi.h']]],
+  ['bold_5fred_18',['BOLD_RED',['../holi_8h.html#a58f9401d546703859ab9c8720c61ee9e',1,'holi.h']]],
+  ['bold_5fwhite_19',['BOLD_WHITE',['../holi_8h.html#a9489fe820b5e8eb3cbd187a2d0813004',1,'holi.h']]],
+  ['bold_5fyellow_20',['BOLD_YELLOW',['../holi_8h.html#a1657fd9211b5650e98b0ebd377a74e47',1,'holi.h']]]
+];

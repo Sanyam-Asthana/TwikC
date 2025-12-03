@@ -1,0 +1,157 @@
+\doxysection{grid.\+h File Reference}
+\hypertarget{grid_8h}{}\label{grid_8h}\index{grid.h@{grid.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{grid_8h_a08246606c233e7785a497c09672f366f}{GRID\+\_\+\+SIZE}}~24
+\item 
+\#define \mbox{\hyperlink{grid_8h_a035c0b93babde37c8919064af8b67928}{DISPLAY\+\_\+\+SIZE}}~(\mbox{\hyperlink{grid_8h_a08246606c233e7785a497c09672f366f}{GRID\+\_\+\+SIZE}} \texorpdfstring{$\ast$}{*} 2 -\/ 1)
+\item 
+\#define \mbox{\hyperlink{grid_8h_a61ad6bb68cba0a0afd4d501e2f87ee87}{LINK\+\_\+R}}~"{}╱"{}
+\item 
+\#define \mbox{\hyperlink{grid_8h_aa09a49dff8a08d9113055065a11e8044}{LINK\+\_\+L}}~"{}╲"{}
+\item 
+\#define \mbox{\hyperlink{grid_8h_ac389dbca21e58410d552988f3ec954c3}{GRID}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{grid_8h_a98e13dffc83fcb0ea6bc853b70fbe775}{print\+Peg}} (int row\+Index, int column\+Index)
+\begin{DoxyCompactList}\small\item\em Helper function to print a single peg with its correct color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{grid_8h_a9b80dd6d8e29a4aa4b47a07388baff19}{print\+Grid}} ()
+\begin{DoxyCompactList}\small\item\em Function to print the whole grid with the correct numbering and labels. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{grid_8h_a663e8eb5dd1913c1160ceac554df8e21}{grid\+Change\+Color\+Of\+Cell}} (int row, int column, char color)
+\begin{DoxyCompactList}\small\item\em Changes color of an element of the grid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{grid_8h_aeaa8432e48251380b64dd51dfa3b045b}{grid}} \mbox{[}24\mbox{]}\mbox{[}24\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{grid_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{grid_8h_a035c0b93babde37c8919064af8b67928}\index{grid.h@{grid.h}!DISPLAY\_SIZE@{DISPLAY\_SIZE}}
+\index{DISPLAY\_SIZE@{DISPLAY\_SIZE}!grid.h@{grid.h}}
+\doxysubsubsection{\texorpdfstring{DISPLAY\_SIZE}{DISPLAY\_SIZE}}
+{\footnotesize\ttfamily \label{grid_8h_a035c0b93babde37c8919064af8b67928} 
+\#define DISPLAY\+\_\+\+SIZE~(\mbox{\hyperlink{grid_8h_a08246606c233e7785a497c09672f366f}{GRID\+\_\+\+SIZE}} \texorpdfstring{$\ast$}{*} 2 -\/ 1)}
+
+\Hypertarget{grid_8h_ac389dbca21e58410d552988f3ec954c3}\index{grid.h@{grid.h}!GRID@{GRID}}
+\index{GRID@{GRID}!grid.h@{grid.h}}
+\doxysubsubsection{\texorpdfstring{GRID}{GRID}}
+{\footnotesize\ttfamily \label{grid_8h_ac389dbca21e58410d552988f3ec954c3} 
+\#define GRID}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},\(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{grid_8h_a08246606c233e7785a497c09672f366f}\index{grid.h@{grid.h}!GRID\_SIZE@{GRID\_SIZE}}
+\index{GRID\_SIZE@{GRID\_SIZE}!grid.h@{grid.h}}
+\doxysubsubsection{\texorpdfstring{GRID\_SIZE}{GRID\_SIZE}}
+{\footnotesize\ttfamily \label{grid_8h_a08246606c233e7785a497c09672f366f} 
+\#define GRID\+\_\+\+SIZE~24}
+
+\Hypertarget{grid_8h_aa09a49dff8a08d9113055065a11e8044}\index{grid.h@{grid.h}!LINK\_L@{LINK\_L}}
+\index{LINK\_L@{LINK\_L}!grid.h@{grid.h}}
+\doxysubsubsection{\texorpdfstring{LINK\_L}{LINK\_L}}
+{\footnotesize\ttfamily \label{grid_8h_aa09a49dff8a08d9113055065a11e8044} 
+\#define LINK\+\_\+L~"{}╲"{}}
+
+\Hypertarget{grid_8h_a61ad6bb68cba0a0afd4d501e2f87ee87}\index{grid.h@{grid.h}!LINK\_R@{LINK\_R}}
+\index{LINK\_R@{LINK\_R}!grid.h@{grid.h}}
+\doxysubsubsection{\texorpdfstring{LINK\_R}{LINK\_R}}
+{\footnotesize\ttfamily \label{grid_8h_a61ad6bb68cba0a0afd4d501e2f87ee87} 
+\#define LINK\+\_\+R~"{}╱"{}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{grid_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{grid_8h_a663e8eb5dd1913c1160ceac554df8e21}\index{grid.h@{grid.h}!gridChangeColorOfCell@{gridChangeColorOfCell}}
+\index{gridChangeColorOfCell@{gridChangeColorOfCell}!grid.h@{grid.h}}
+\doxysubsubsection{\texorpdfstring{gridChangeColorOfCell()}{gridChangeColorOfCell()}}
+{\footnotesize\ttfamily \label{grid_8h_a663e8eb5dd1913c1160ceac554df8e21} 
+void grid\+Change\+Color\+Of\+Cell (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{column}{, }\item[{char}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Changes color of an element of the grid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & Row number of the element to be changed \\
+\hline
+{\em column} & Column number of the element to be changed \\
+\hline
+{\em color} & The character the element has to be changed to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{grid_8h_a9b80dd6d8e29a4aa4b47a07388baff19}\index{grid.h@{grid.h}!printGrid@{printGrid}}
+\index{printGrid@{printGrid}!grid.h@{grid.h}}
+\doxysubsubsection{\texorpdfstring{printGrid()}{printGrid()}}
+{\footnotesize\ttfamily \label{grid_8h_a9b80dd6d8e29a4aa4b47a07388baff19} 
+void print\+Grid (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function to print the whole grid with the correct numbering and labels. 
+
+\Hypertarget{grid_8h_a98e13dffc83fcb0ea6bc853b70fbe775}\index{grid.h@{grid.h}!printPeg@{printPeg}}
+\index{printPeg@{printPeg}!grid.h@{grid.h}}
+\doxysubsubsection{\texorpdfstring{printPeg()}{printPeg()}}
+{\footnotesize\ttfamily \label{grid_8h_a98e13dffc83fcb0ea6bc853b70fbe775} 
+void print\+Peg (\begin{DoxyParamCaption}\item[{int}]{row\+Index}{, }\item[{int}]{column\+Index}{}\end{DoxyParamCaption})}
+
+
+
+Helper function to print a single peg with its correct color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row\+Index} & The row of the peg. \\
+\hline
+{\em column\+Index} & The column of the peg. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-var-members}
+\Hypertarget{grid_8h_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{grid_8h_aeaa8432e48251380b64dd51dfa3b045b}\index{grid.h@{grid.h}!grid@{grid}}
+\index{grid@{grid}!grid.h@{grid.h}}
+\doxysubsubsection{\texorpdfstring{grid}{grid}}
+{\footnotesize\ttfamily \label{grid_8h_aeaa8432e48251380b64dd51dfa3b045b} 
+char grid\mbox{[}24\mbox{]}\mbox{[}24\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+

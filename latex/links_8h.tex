@@ -1,0 +1,163 @@
+\doxysection{links.\+h File Reference}
+\hypertarget{links_8h}{}\label{links_8h}\index{links.h@{links.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_link}{Link}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{links_8h_a7c7a76078009c55b6026449b2786c972}{add\+Link}} (int row1, int row2, int column1, int column2, char color)
+\begin{DoxyCompactList}\small\item\em Adds a link to the all\+Links array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{links_8h_aadb20396c6554aa2a952f2925e2c4927}{print\+All\+Links}} ()
+\begin{DoxyCompactList}\small\item\em Prints all the links. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{links_8h_adfc534a0d199eaedf2214f3a8742fab1}{check\+For\+Possible\+Links}} (int row, int column, char color)
+\begin{DoxyCompactList}\small\item\em Checks for the possible links that could be formed because of the peg positions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{links_8h_ac25ee07be0b5e39f779231788a2cb295}{calculate\+Orientation}} (int row1, int column1, int row2, int column2, int row3, int column3)
+\begin{DoxyCompactList}\small\item\em Calculates the orientation of three points by calculating their vector product. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{links_8h_a9cc23a2dd865ea815a1d7581f74d9db5}{is\+Link\+Overlap}} (int row1, int column1, int row2, int column2, int row3, int column3, int row4, int column4)
+\begin{DoxyCompactList}\small\item\em Returns if two possible links overlap. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_link}{Link}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{links_8h_a5be5e611c682c47df9b5631599fb5f30}{get\+All\+Links}} ()
+\begin{DoxyCompactList}\small\item\em Getter function for the all\+Links array. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{links_8h_aac014a849a0e96f6345ac63bf869a965}{get\+Number\+Of\+Links}} ()
+\begin{DoxyCompactList}\small\item\em Getter function for the number\+Of\+Links variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{links_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{links_8h_a7c7a76078009c55b6026449b2786c972}\index{links.h@{links.h}!addLink@{addLink}}
+\index{addLink@{addLink}!links.h@{links.h}}
+\doxysubsubsection{\texorpdfstring{addLink()}{addLink()}}
+{\footnotesize\ttfamily \label{links_8h_a7c7a76078009c55b6026449b2786c972} 
+void add\+Link (\begin{DoxyParamCaption}\item[{int}]{row1}{, }\item[{int}]{row2}{, }\item[{int}]{column1}{, }\item[{int}]{column2}{, }\item[{char}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Adds a link to the all\+Links array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row1} & Row index of the first point \\
+\hline
+{\em row2} & Row index of the second point \\
+\hline
+{\em column1} & Column index of the first point \\
+\hline
+{\em column2} & Column index of the second point \\
+\hline
+{\em color} & Color whose link is to be added \\
+\hline
+\end{DoxyParams}
+\Hypertarget{links_8h_ac25ee07be0b5e39f779231788a2cb295}\index{links.h@{links.h}!calculateOrientation@{calculateOrientation}}
+\index{calculateOrientation@{calculateOrientation}!links.h@{links.h}}
+\doxysubsubsection{\texorpdfstring{calculateOrientation()}{calculateOrientation()}}
+{\footnotesize\ttfamily \label{links_8h_ac25ee07be0b5e39f779231788a2cb295} 
+int calculate\+Orientation (\begin{DoxyParamCaption}\item[{int}]{row1}{, }\item[{int}]{column1}{, }\item[{int}]{row2}{, }\item[{int}]{column2}{, }\item[{int}]{row3}{, }\item[{int}]{column3}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the orientation of three points by calculating their vector product. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row1} & The row index of the 1st point \\
+\hline
+{\em row2} & The row index of the 2nd point \\
+\hline
+{\em row3} & The row index of the 3rd point \\
+\hline
+{\em column1} & The column index of the 1st point \\
+\hline
+{\em column2} & The column index of the 2nd point \\
+\hline
+{\em column3} & The column index of the 3rd point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 1, 0 or -\/1 depending on the orientation 
+\end{DoxyReturn}
+\Hypertarget{links_8h_adfc534a0d199eaedf2214f3a8742fab1}\index{links.h@{links.h}!checkForPossibleLinks@{checkForPossibleLinks}}
+\index{checkForPossibleLinks@{checkForPossibleLinks}!links.h@{links.h}}
+\doxysubsubsection{\texorpdfstring{checkForPossibleLinks()}{checkForPossibleLinks()}}
+{\footnotesize\ttfamily \label{links_8h_adfc534a0d199eaedf2214f3a8742fab1} 
+void check\+For\+Possible\+Links (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{column}{, }\item[{char}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Checks for the possible links that could be formed because of the peg positions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & The row which is to be added \\
+\hline
+{\em column} & The column which is to be added \\
+\hline
+\end{DoxyParams}
+\Hypertarget{links_8h_a5be5e611c682c47df9b5631599fb5f30}\index{links.h@{links.h}!getAllLinks@{getAllLinks}}
+\index{getAllLinks@{getAllLinks}!links.h@{links.h}}
+\doxysubsubsection{\texorpdfstring{getAllLinks()}{getAllLinks()}}
+{\footnotesize\ttfamily \label{links_8h_a5be5e611c682c47df9b5631599fb5f30} 
+\mbox{\hyperlink{struct_link}{Link}} \texorpdfstring{$\ast$}{*} get\+All\+Links (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Getter function for the all\+Links array. 
+
+\begin{DoxyReturn}{Returns}
+Returns the all\+Links array 
+\end{DoxyReturn}
+\Hypertarget{links_8h_aac014a849a0e96f6345ac63bf869a965}\index{links.h@{links.h}!getNumberOfLinks@{getNumberOfLinks}}
+\index{getNumberOfLinks@{getNumberOfLinks}!links.h@{links.h}}
+\doxysubsubsection{\texorpdfstring{getNumberOfLinks()}{getNumberOfLinks()}}
+{\footnotesize\ttfamily \label{links_8h_aac014a849a0e96f6345ac63bf869a965} 
+int get\+Number\+Of\+Links (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Getter function for the number\+Of\+Links variable. 
+
+\begin{DoxyReturn}{Returns}
+Returns the number\+Of\+Links variable 
+\end{DoxyReturn}
+\Hypertarget{links_8h_a9cc23a2dd865ea815a1d7581f74d9db5}\index{links.h@{links.h}!isLinkOverlap@{isLinkOverlap}}
+\index{isLinkOverlap@{isLinkOverlap}!links.h@{links.h}}
+\doxysubsubsection{\texorpdfstring{isLinkOverlap()}{isLinkOverlap()}}
+{\footnotesize\ttfamily \label{links_8h_a9cc23a2dd865ea815a1d7581f74d9db5} 
+int is\+Link\+Overlap (\begin{DoxyParamCaption}\item[{int}]{row1}{, }\item[{int}]{column1}{, }\item[{int}]{row2}{, }\item[{int}]{column2}{, }\item[{int}]{row3}{, }\item[{int}]{column3}{, }\item[{int}]{row4}{, }\item[{int}]{column4}{}\end{DoxyParamCaption})}
+
+
+
+Returns if two possible links overlap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row1} & The row index of the 1st point \\
+\hline
+{\em row2} & The row index of the 2nd point \\
+\hline
+{\em row3} & The row index of the 3rd point \\
+\hline
+{\em row4} & The row index of the 4th point \\
+\hline
+{\em column1} & The column index of the 1st point \\
+\hline
+{\em column2} & The column index of the 2nd point \\
+\hline
+{\em column3} & The column index of the 3rd point \\
+\hline
+{\em column4} & The column index of the 4th point \\
+\hline
+\end{DoxyParams}
+\Hypertarget{links_8h_aadb20396c6554aa2a952f2925e2c4927}\index{links.h@{links.h}!printAllLinks@{printAllLinks}}
+\index{printAllLinks@{printAllLinks}!links.h@{links.h}}
+\doxysubsubsection{\texorpdfstring{printAllLinks()}{printAllLinks()}}
+{\footnotesize\ttfamily \label{links_8h_aadb20396c6554aa2a952f2925e2c4927} 
+void print\+All\+Links (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Prints all the links. 
+

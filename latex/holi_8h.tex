@@ -1,0 +1,266 @@
+\doxysection{holi.\+h File Reference}
+\hypertarget{holi_8h}{}\label{holi_8h}\index{holi.h@{holi.h}}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{holi_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}}~"{}\textbackslash{}033\mbox{[}0m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_a26cdbb1a00213c810caccf21cd33a631}{BOLD}}~"{}\textbackslash{}033\mbox{[}1m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_aaec1a65734e33bc49e8dc8d90e9546bc}{UNDERLINE}}~"{}\textbackslash{}033\mbox{[}4m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_ac9bc3fb6eddd8f12dbedee55c7644816}{REVERSED}}~"{}\textbackslash{}033\mbox{[}7m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_a7b3b25cba33b07c303f3060fe41887f6}{BLACK}}~"{}\textbackslash{}033\mbox{[}0;30m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_a8d23feea868a983c8c2b661e1e16972f}{RED}}~"{}\textbackslash{}033\mbox{[}0;31m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}}~"{}\textbackslash{}033\mbox{[}0;32m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_abf681265909adf3d3e8116c93c0ba179}{YELLOW}}~"{}\textbackslash{}033\mbox{[}0;33m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_a79d10e672abb49ad63eeaa8aaef57c38}{BLUE}}~"{}\textbackslash{}033\mbox{[}0;34m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_a6f699060902f800f12aaae150f3a708e}{MAGENTA}}~"{}\textbackslash{}033\mbox{[}0;35m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_ad243f93c16bc4c1d3e0a13b84421d760}{CYAN}}~"{}\textbackslash{}033\mbox{[}0;36m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_a87b537f5fa5c109d3c05c13d6b18f382}{WHITE}}~"{}\textbackslash{}033\mbox{[}0;37m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_ae5f70677050eecd8909e0248e07b9e73}{GRAY}}~"{}\textbackslash{}033\mbox{[}90m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_ac5b6e19bf06822021f35602c59658de3}{ORANGE}}~"{}\textbackslash{}033\mbox{[}38;5;208m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_a7b6e436cdd428f9257bbc177197b81e7}{BOLD\+\_\+\+BLACK}}~"{}\textbackslash{}033\mbox{[}1;30m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_a58f9401d546703859ab9c8720c61ee9e}{BOLD\+\_\+\+RED}}~"{}\textbackslash{}033\mbox{[}1;31m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_a08800e737f550f758120b8e717789a56}{BOLD\+\_\+\+GREEN}}~"{}\textbackslash{}033\mbox{[}1;32m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_a1657fd9211b5650e98b0ebd377a74e47}{BOLD\+\_\+\+YELLOW}}~"{}\textbackslash{}033\mbox{[}1;33m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_a085159bf5578cb27037b75eda75b3b83}{BOLD\+\_\+\+BLUE}}~"{}\textbackslash{}033\mbox{[}1;34m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_a0533bbc2534a2c8075e060896c9bd2d8}{BOLD\+\_\+\+MAGENTA}}~"{}\textbackslash{}033\mbox{[}1;35m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_a62f05b1e00666a7e59003a86c1ca68d6}{BOLD\+\_\+\+CYAN}}~"{}\textbackslash{}033\mbox{[}1;36m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_a9489fe820b5e8eb3cbd187a2d0813004}{BOLD\+\_\+\+WHITE}}~"{}\textbackslash{}033\mbox{[}1;37m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_ae8cc8e2491b50ad838cba58cf058eec0}{BOLD\+\_\+\+ORANGE}}~"{}\textbackslash{}033\mbox{[}1;38;5;208m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_a0e5ebbe291d95cf1b8f1661252722fe0}{BG\+\_\+\+BLACK}}~"{}\textbackslash{}033\mbox{[}44m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_ac317d04c219b630f9c36b0241d9d4be7}{BG\+\_\+\+RED}}~"{}\textbackslash{}033\mbox{[}41m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_ac351fb4567ed6655a5b39769cc5dfd04}{BG\+\_\+\+GREEN}}~"{}\textbackslash{}033\mbox{[}42m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_ab31fe3e74b1137650d30ede5c9b86218}{BG\+\_\+\+YELLOW}}~"{}\textbackslash{}033\mbox{[}43m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_a9afd14c731aa8c62d9471913c1b23b9f}{BG\+\_\+\+BLUE}}~"{}\textbackslash{}033\mbox{[}40m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_ac08aa3f07e012f1b0edafa632d5300ba}{BG\+\_\+\+MAGENTA}}~"{}\textbackslash{}033\mbox{[}45m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_a21ef237e1c4d69656729da4b34c31d8b}{BG\+\_\+\+CYAN}}~"{}\textbackslash{}033\mbox{[}46m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_a6beded3f171517df3902c52f79f6fea2}{BG\+\_\+\+WHITE}}~"{}\textbackslash{}033\mbox{[}47m"{}
+\item 
+\#define \mbox{\hyperlink{holi_8h_a38eec52a7dccb94ff563e30eda32c891}{BLINK}}~"{}\textbackslash{}033\mbox{[}5m"{}
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{holi_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{holi_8h_a0e5ebbe291d95cf1b8f1661252722fe0}\index{holi.h@{holi.h}!BG\_BLACK@{BG\_BLACK}}
+\index{BG\_BLACK@{BG\_BLACK}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BG\_BLACK}{BG\_BLACK}}
+{\footnotesize\ttfamily \label{holi_8h_a0e5ebbe291d95cf1b8f1661252722fe0} 
+\#define BG\+\_\+\+BLACK~"{}\textbackslash{}033\mbox{[}44m"{}}
+
+\Hypertarget{holi_8h_a9afd14c731aa8c62d9471913c1b23b9f}\index{holi.h@{holi.h}!BG\_BLUE@{BG\_BLUE}}
+\index{BG\_BLUE@{BG\_BLUE}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BG\_BLUE}{BG\_BLUE}}
+{\footnotesize\ttfamily \label{holi_8h_a9afd14c731aa8c62d9471913c1b23b9f} 
+\#define BG\+\_\+\+BLUE~"{}\textbackslash{}033\mbox{[}40m"{}}
+
+\Hypertarget{holi_8h_a21ef237e1c4d69656729da4b34c31d8b}\index{holi.h@{holi.h}!BG\_CYAN@{BG\_CYAN}}
+\index{BG\_CYAN@{BG\_CYAN}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BG\_CYAN}{BG\_CYAN}}
+{\footnotesize\ttfamily \label{holi_8h_a21ef237e1c4d69656729da4b34c31d8b} 
+\#define BG\+\_\+\+CYAN~"{}\textbackslash{}033\mbox{[}46m"{}}
+
+\Hypertarget{holi_8h_ac351fb4567ed6655a5b39769cc5dfd04}\index{holi.h@{holi.h}!BG\_GREEN@{BG\_GREEN}}
+\index{BG\_GREEN@{BG\_GREEN}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BG\_GREEN}{BG\_GREEN}}
+{\footnotesize\ttfamily \label{holi_8h_ac351fb4567ed6655a5b39769cc5dfd04} 
+\#define BG\+\_\+\+GREEN~"{}\textbackslash{}033\mbox{[}42m"{}}
+
+\Hypertarget{holi_8h_ac08aa3f07e012f1b0edafa632d5300ba}\index{holi.h@{holi.h}!BG\_MAGENTA@{BG\_MAGENTA}}
+\index{BG\_MAGENTA@{BG\_MAGENTA}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BG\_MAGENTA}{BG\_MAGENTA}}
+{\footnotesize\ttfamily \label{holi_8h_ac08aa3f07e012f1b0edafa632d5300ba} 
+\#define BG\+\_\+\+MAGENTA~"{}\textbackslash{}033\mbox{[}45m"{}}
+
+\Hypertarget{holi_8h_ac317d04c219b630f9c36b0241d9d4be7}\index{holi.h@{holi.h}!BG\_RED@{BG\_RED}}
+\index{BG\_RED@{BG\_RED}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BG\_RED}{BG\_RED}}
+{\footnotesize\ttfamily \label{holi_8h_ac317d04c219b630f9c36b0241d9d4be7} 
+\#define BG\+\_\+\+RED~"{}\textbackslash{}033\mbox{[}41m"{}}
+
+\Hypertarget{holi_8h_a6beded3f171517df3902c52f79f6fea2}\index{holi.h@{holi.h}!BG\_WHITE@{BG\_WHITE}}
+\index{BG\_WHITE@{BG\_WHITE}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BG\_WHITE}{BG\_WHITE}}
+{\footnotesize\ttfamily \label{holi_8h_a6beded3f171517df3902c52f79f6fea2} 
+\#define BG\+\_\+\+WHITE~"{}\textbackslash{}033\mbox{[}47m"{}}
+
+\Hypertarget{holi_8h_ab31fe3e74b1137650d30ede5c9b86218}\index{holi.h@{holi.h}!BG\_YELLOW@{BG\_YELLOW}}
+\index{BG\_YELLOW@{BG\_YELLOW}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BG\_YELLOW}{BG\_YELLOW}}
+{\footnotesize\ttfamily \label{holi_8h_ab31fe3e74b1137650d30ede5c9b86218} 
+\#define BG\+\_\+\+YELLOW~"{}\textbackslash{}033\mbox{[}43m"{}}
+
+\Hypertarget{holi_8h_a7b3b25cba33b07c303f3060fe41887f6}\index{holi.h@{holi.h}!BLACK@{BLACK}}
+\index{BLACK@{BLACK}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BLACK}{BLACK}}
+{\footnotesize\ttfamily \label{holi_8h_a7b3b25cba33b07c303f3060fe41887f6} 
+\#define BLACK~"{}\textbackslash{}033\mbox{[}0;30m"{}}
+
+\Hypertarget{holi_8h_a38eec52a7dccb94ff563e30eda32c891}\index{holi.h@{holi.h}!BLINK@{BLINK}}
+\index{BLINK@{BLINK}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BLINK}{BLINK}}
+{\footnotesize\ttfamily \label{holi_8h_a38eec52a7dccb94ff563e30eda32c891} 
+\#define BLINK~"{}\textbackslash{}033\mbox{[}5m"{}}
+
+\Hypertarget{holi_8h_a79d10e672abb49ad63eeaa8aaef57c38}\index{holi.h@{holi.h}!BLUE@{BLUE}}
+\index{BLUE@{BLUE}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BLUE}{BLUE}}
+{\footnotesize\ttfamily \label{holi_8h_a79d10e672abb49ad63eeaa8aaef57c38} 
+\#define BLUE~"{}\textbackslash{}033\mbox{[}0;34m"{}}
+
+\Hypertarget{holi_8h_a26cdbb1a00213c810caccf21cd33a631}\index{holi.h@{holi.h}!BOLD@{BOLD}}
+\index{BOLD@{BOLD}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BOLD}{BOLD}}
+{\footnotesize\ttfamily \label{holi_8h_a26cdbb1a00213c810caccf21cd33a631} 
+\#define BOLD~"{}\textbackslash{}033\mbox{[}1m"{}}
+
+\Hypertarget{holi_8h_a7b6e436cdd428f9257bbc177197b81e7}\index{holi.h@{holi.h}!BOLD\_BLACK@{BOLD\_BLACK}}
+\index{BOLD\_BLACK@{BOLD\_BLACK}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BOLD\_BLACK}{BOLD\_BLACK}}
+{\footnotesize\ttfamily \label{holi_8h_a7b6e436cdd428f9257bbc177197b81e7} 
+\#define BOLD\+\_\+\+BLACK~"{}\textbackslash{}033\mbox{[}1;30m"{}}
+
+\Hypertarget{holi_8h_a085159bf5578cb27037b75eda75b3b83}\index{holi.h@{holi.h}!BOLD\_BLUE@{BOLD\_BLUE}}
+\index{BOLD\_BLUE@{BOLD\_BLUE}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BOLD\_BLUE}{BOLD\_BLUE}}
+{\footnotesize\ttfamily \label{holi_8h_a085159bf5578cb27037b75eda75b3b83} 
+\#define BOLD\+\_\+\+BLUE~"{}\textbackslash{}033\mbox{[}1;34m"{}}
+
+\Hypertarget{holi_8h_a62f05b1e00666a7e59003a86c1ca68d6}\index{holi.h@{holi.h}!BOLD\_CYAN@{BOLD\_CYAN}}
+\index{BOLD\_CYAN@{BOLD\_CYAN}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BOLD\_CYAN}{BOLD\_CYAN}}
+{\footnotesize\ttfamily \label{holi_8h_a62f05b1e00666a7e59003a86c1ca68d6} 
+\#define BOLD\+\_\+\+CYAN~"{}\textbackslash{}033\mbox{[}1;36m"{}}
+
+\Hypertarget{holi_8h_a08800e737f550f758120b8e717789a56}\index{holi.h@{holi.h}!BOLD\_GREEN@{BOLD\_GREEN}}
+\index{BOLD\_GREEN@{BOLD\_GREEN}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BOLD\_GREEN}{BOLD\_GREEN}}
+{\footnotesize\ttfamily \label{holi_8h_a08800e737f550f758120b8e717789a56} 
+\#define BOLD\+\_\+\+GREEN~"{}\textbackslash{}033\mbox{[}1;32m"{}}
+
+\Hypertarget{holi_8h_a0533bbc2534a2c8075e060896c9bd2d8}\index{holi.h@{holi.h}!BOLD\_MAGENTA@{BOLD\_MAGENTA}}
+\index{BOLD\_MAGENTA@{BOLD\_MAGENTA}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BOLD\_MAGENTA}{BOLD\_MAGENTA}}
+{\footnotesize\ttfamily \label{holi_8h_a0533bbc2534a2c8075e060896c9bd2d8} 
+\#define BOLD\+\_\+\+MAGENTA~"{}\textbackslash{}033\mbox{[}1;35m"{}}
+
+\Hypertarget{holi_8h_ae8cc8e2491b50ad838cba58cf058eec0}\index{holi.h@{holi.h}!BOLD\_ORANGE@{BOLD\_ORANGE}}
+\index{BOLD\_ORANGE@{BOLD\_ORANGE}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BOLD\_ORANGE}{BOLD\_ORANGE}}
+{\footnotesize\ttfamily \label{holi_8h_ae8cc8e2491b50ad838cba58cf058eec0} 
+\#define BOLD\+\_\+\+ORANGE~"{}\textbackslash{}033\mbox{[}1;38;5;208m"{}}
+
+\Hypertarget{holi_8h_a58f9401d546703859ab9c8720c61ee9e}\index{holi.h@{holi.h}!BOLD\_RED@{BOLD\_RED}}
+\index{BOLD\_RED@{BOLD\_RED}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BOLD\_RED}{BOLD\_RED}}
+{\footnotesize\ttfamily \label{holi_8h_a58f9401d546703859ab9c8720c61ee9e} 
+\#define BOLD\+\_\+\+RED~"{}\textbackslash{}033\mbox{[}1;31m"{}}
+
+\Hypertarget{holi_8h_a9489fe820b5e8eb3cbd187a2d0813004}\index{holi.h@{holi.h}!BOLD\_WHITE@{BOLD\_WHITE}}
+\index{BOLD\_WHITE@{BOLD\_WHITE}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BOLD\_WHITE}{BOLD\_WHITE}}
+{\footnotesize\ttfamily \label{holi_8h_a9489fe820b5e8eb3cbd187a2d0813004} 
+\#define BOLD\+\_\+\+WHITE~"{}\textbackslash{}033\mbox{[}1;37m"{}}
+
+\Hypertarget{holi_8h_a1657fd9211b5650e98b0ebd377a74e47}\index{holi.h@{holi.h}!BOLD\_YELLOW@{BOLD\_YELLOW}}
+\index{BOLD\_YELLOW@{BOLD\_YELLOW}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{BOLD\_YELLOW}{BOLD\_YELLOW}}
+{\footnotesize\ttfamily \label{holi_8h_a1657fd9211b5650e98b0ebd377a74e47} 
+\#define BOLD\+\_\+\+YELLOW~"{}\textbackslash{}033\mbox{[}1;33m"{}}
+
+\Hypertarget{holi_8h_ad243f93c16bc4c1d3e0a13b84421d760}\index{holi.h@{holi.h}!CYAN@{CYAN}}
+\index{CYAN@{CYAN}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{CYAN}{CYAN}}
+{\footnotesize\ttfamily \label{holi_8h_ad243f93c16bc4c1d3e0a13b84421d760} 
+\#define CYAN~"{}\textbackslash{}033\mbox{[}0;36m"{}}
+
+\Hypertarget{holi_8h_ae5f70677050eecd8909e0248e07b9e73}\index{holi.h@{holi.h}!GRAY@{GRAY}}
+\index{GRAY@{GRAY}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{GRAY}{GRAY}}
+{\footnotesize\ttfamily \label{holi_8h_ae5f70677050eecd8909e0248e07b9e73} 
+\#define GRAY~"{}\textbackslash{}033\mbox{[}90m"{}}
+
+\Hypertarget{holi_8h_acfbc006ea433ad708fdee3e82996e721}\index{holi.h@{holi.h}!GREEN@{GREEN}}
+\index{GREEN@{GREEN}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{GREEN}{GREEN}}
+{\footnotesize\ttfamily \label{holi_8h_acfbc006ea433ad708fdee3e82996e721} 
+\#define GREEN~"{}\textbackslash{}033\mbox{[}0;32m"{}}
+
+\Hypertarget{holi_8h_a6f699060902f800f12aaae150f3a708e}\index{holi.h@{holi.h}!MAGENTA@{MAGENTA}}
+\index{MAGENTA@{MAGENTA}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{MAGENTA}{MAGENTA}}
+{\footnotesize\ttfamily \label{holi_8h_a6f699060902f800f12aaae150f3a708e} 
+\#define MAGENTA~"{}\textbackslash{}033\mbox{[}0;35m"{}}
+
+\Hypertarget{holi_8h_ac5b6e19bf06822021f35602c59658de3}\index{holi.h@{holi.h}!ORANGE@{ORANGE}}
+\index{ORANGE@{ORANGE}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{ORANGE}{ORANGE}}
+{\footnotesize\ttfamily \label{holi_8h_ac5b6e19bf06822021f35602c59658de3} 
+\#define ORANGE~"{}\textbackslash{}033\mbox{[}38;5;208m"{}}
+
+\Hypertarget{holi_8h_a8d23feea868a983c8c2b661e1e16972f}\index{holi.h@{holi.h}!RED@{RED}}
+\index{RED@{RED}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{RED}{RED}}
+{\footnotesize\ttfamily \label{holi_8h_a8d23feea868a983c8c2b661e1e16972f} 
+\#define RED~"{}\textbackslash{}033\mbox{[}0;31m"{}}
+
+\Hypertarget{holi_8h_ab702106cf3b3e96750b6845ded4e0299}\index{holi.h@{holi.h}!RESET@{RESET}}
+\index{RESET@{RESET}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{RESET}{RESET}}
+{\footnotesize\ttfamily \label{holi_8h_ab702106cf3b3e96750b6845ded4e0299} 
+\#define RESET~"{}\textbackslash{}033\mbox{[}0m"{}}
+
+\Hypertarget{holi_8h_ac9bc3fb6eddd8f12dbedee55c7644816}\index{holi.h@{holi.h}!REVERSED@{REVERSED}}
+\index{REVERSED@{REVERSED}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{REVERSED}{REVERSED}}
+{\footnotesize\ttfamily \label{holi_8h_ac9bc3fb6eddd8f12dbedee55c7644816} 
+\#define REVERSED~"{}\textbackslash{}033\mbox{[}7m"{}}
+
+\Hypertarget{holi_8h_aaec1a65734e33bc49e8dc8d90e9546bc}\index{holi.h@{holi.h}!UNDERLINE@{UNDERLINE}}
+\index{UNDERLINE@{UNDERLINE}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{UNDERLINE}{UNDERLINE}}
+{\footnotesize\ttfamily \label{holi_8h_aaec1a65734e33bc49e8dc8d90e9546bc} 
+\#define UNDERLINE~"{}\textbackslash{}033\mbox{[}4m"{}}
+
+\Hypertarget{holi_8h_a87b537f5fa5c109d3c05c13d6b18f382}\index{holi.h@{holi.h}!WHITE@{WHITE}}
+\index{WHITE@{WHITE}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{WHITE}{WHITE}}
+{\footnotesize\ttfamily \label{holi_8h_a87b537f5fa5c109d3c05c13d6b18f382} 
+\#define WHITE~"{}\textbackslash{}033\mbox{[}0;37m"{}}
+
+\Hypertarget{holi_8h_abf681265909adf3d3e8116c93c0ba179}\index{holi.h@{holi.h}!YELLOW@{YELLOW}}
+\index{YELLOW@{YELLOW}!holi.h@{holi.h}}
+\doxysubsubsection{\texorpdfstring{YELLOW}{YELLOW}}
+{\footnotesize\ttfamily \label{holi_8h_abf681265909adf3d3e8116c93c0ba179} 
+\#define YELLOW~"{}\textbackslash{}033\mbox{[}0;33m"{}}
+

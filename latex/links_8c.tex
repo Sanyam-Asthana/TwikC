@@ -1,0 +1,216 @@
+\doxysection{links.\+c File Reference}
+\hypertarget{links_8c}{}\label{links_8c}\index{links.c@{links.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}links.\+h"{}}\newline
+{\ttfamily \#include "{}grid.\+h"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{links_8c_a105caa178db222564f6fab1433ae289b}{COLLINEAR}}~0
+\item 
+\#define \mbox{\hyperlink{links_8c_a0b426275bb5c337343cacb73c8070c5d}{SAME\+\_\+\+SIDE}}~1
+\item 
+\#define \mbox{\hyperlink{links_8c_a37570c6f371d7ee48b3dfd820fedd0d1}{DIFF\+\_\+\+SIDE}}~-\/1
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{links_8c_a7c7a76078009c55b6026449b2786c972}{add\+Link}} (int row1, int row2, int column1, int column2, char color)
+\begin{DoxyCompactList}\small\item\em Adds a link to the all\+Links array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{links_8c_adfc534a0d199eaedf2214f3a8742fab1}{check\+For\+Possible\+Links}} (int row, int column, char color)
+\begin{DoxyCompactList}\small\item\em Checks for the possible links that could be formed because of the peg positions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{links_8c_a9cc23a2dd865ea815a1d7581f74d9db5}{is\+Link\+Overlap}} (int row1, int column1, int row2, int column2, int row3, int column3, int row4, int column4)
+\begin{DoxyCompactList}\small\item\em Returns if two possible links overlap. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{links_8c_abc1e43373b655ab03aa5727cfabdd7ab}{calculate\+Orientation}} (int row1, int row2, int row3, int column1, int column2, int column3)
+\begin{DoxyCompactList}\small\item\em Calculates the orientation of three points by calculating their vector product. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{links_8c_aadb20396c6554aa2a952f2925e2c4927}{print\+All\+Links}} ()
+\begin{DoxyCompactList}\small\item\em Prints all the links. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_link}{Link}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{links_8c_a5be5e611c682c47df9b5631599fb5f30}{get\+All\+Links}} ()
+\begin{DoxyCompactList}\small\item\em Getter function for the all\+Links array. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{links_8c_aac014a849a0e96f6345ac63bf869a965}{get\+Number\+Of\+Links}} ()
+\begin{DoxyCompactList}\small\item\em Getter function for the number\+Of\+Links variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{links_8c_a11569a6107c2e70a909e93a038bc2628}{number\+Of\+Links}} = 0
+\item 
+\mbox{\hyperlink{struct_link}{Link}} \mbox{\hyperlink{links_8c_aa914a9c72053d35ea0cd4a4f0704b1ed}{all\+Links}} \mbox{[}500\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{links_8c_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{links_8c_a105caa178db222564f6fab1433ae289b}\index{links.c@{links.c}!COLLINEAR@{COLLINEAR}}
+\index{COLLINEAR@{COLLINEAR}!links.c@{links.c}}
+\doxysubsubsection{\texorpdfstring{COLLINEAR}{COLLINEAR}}
+{\footnotesize\ttfamily \label{links_8c_a105caa178db222564f6fab1433ae289b} 
+\#define COLLINEAR~0}
+
+\Hypertarget{links_8c_a37570c6f371d7ee48b3dfd820fedd0d1}\index{links.c@{links.c}!DIFF\_SIDE@{DIFF\_SIDE}}
+\index{DIFF\_SIDE@{DIFF\_SIDE}!links.c@{links.c}}
+\doxysubsubsection{\texorpdfstring{DIFF\_SIDE}{DIFF\_SIDE}}
+{\footnotesize\ttfamily \label{links_8c_a37570c6f371d7ee48b3dfd820fedd0d1} 
+\#define DIFF\+\_\+\+SIDE~-\/1}
+
+\Hypertarget{links_8c_a0b426275bb5c337343cacb73c8070c5d}\index{links.c@{links.c}!SAME\_SIDE@{SAME\_SIDE}}
+\index{SAME\_SIDE@{SAME\_SIDE}!links.c@{links.c}}
+\doxysubsubsection{\texorpdfstring{SAME\_SIDE}{SAME\_SIDE}}
+{\footnotesize\ttfamily \label{links_8c_a0b426275bb5c337343cacb73c8070c5d} 
+\#define SAME\+\_\+\+SIDE~1}
+
+
+
+\label{doc-func-members}
+\Hypertarget{links_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{links_8c_a7c7a76078009c55b6026449b2786c972}\index{links.c@{links.c}!addLink@{addLink}}
+\index{addLink@{addLink}!links.c@{links.c}}
+\doxysubsubsection{\texorpdfstring{addLink()}{addLink()}}
+{\footnotesize\ttfamily \label{links_8c_a7c7a76078009c55b6026449b2786c972} 
+void add\+Link (\begin{DoxyParamCaption}\item[{int}]{row1}{, }\item[{int}]{row2}{, }\item[{int}]{column1}{, }\item[{int}]{column2}{, }\item[{char}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Adds a link to the all\+Links array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row1} & Row index of the first point \\
+\hline
+{\em row2} & Row index of the second point \\
+\hline
+{\em column1} & Column index of the first point \\
+\hline
+{\em column2} & Column index of the second point \\
+\hline
+{\em color} & Color whose link is to be added \\
+\hline
+\end{DoxyParams}
+\Hypertarget{links_8c_abc1e43373b655ab03aa5727cfabdd7ab}\index{links.c@{links.c}!calculateOrientation@{calculateOrientation}}
+\index{calculateOrientation@{calculateOrientation}!links.c@{links.c}}
+\doxysubsubsection{\texorpdfstring{calculateOrientation()}{calculateOrientation()}}
+{\footnotesize\ttfamily \label{links_8c_abc1e43373b655ab03aa5727cfabdd7ab} 
+int calculate\+Orientation (\begin{DoxyParamCaption}\item[{int}]{row1}{, }\item[{int}]{column1}{, }\item[{int}]{row2}{, }\item[{int}]{column2}{, }\item[{int}]{row3}{, }\item[{int}]{column3}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the orientation of three points by calculating their vector product. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row1} & The row index of the 1st point \\
+\hline
+{\em row2} & The row index of the 2nd point \\
+\hline
+{\em row3} & The row index of the 3rd point \\
+\hline
+{\em column1} & The column index of the 1st point \\
+\hline
+{\em column2} & The column index of the 2nd point \\
+\hline
+{\em column3} & The column index of the 3rd point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 1, 0 or -\/1 depending on the orientation 
+\end{DoxyReturn}
+\Hypertarget{links_8c_adfc534a0d199eaedf2214f3a8742fab1}\index{links.c@{links.c}!checkForPossibleLinks@{checkForPossibleLinks}}
+\index{checkForPossibleLinks@{checkForPossibleLinks}!links.c@{links.c}}
+\doxysubsubsection{\texorpdfstring{checkForPossibleLinks()}{checkForPossibleLinks()}}
+{\footnotesize\ttfamily \label{links_8c_adfc534a0d199eaedf2214f3a8742fab1} 
+void check\+For\+Possible\+Links (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{column}{, }\item[{char}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Checks for the possible links that could be formed because of the peg positions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & The row which is to be added \\
+\hline
+{\em column} & The column which is to be added \\
+\hline
+\end{DoxyParams}
+\Hypertarget{links_8c_a5be5e611c682c47df9b5631599fb5f30}\index{links.c@{links.c}!getAllLinks@{getAllLinks}}
+\index{getAllLinks@{getAllLinks}!links.c@{links.c}}
+\doxysubsubsection{\texorpdfstring{getAllLinks()}{getAllLinks()}}
+{\footnotesize\ttfamily \label{links_8c_a5be5e611c682c47df9b5631599fb5f30} 
+\mbox{\hyperlink{struct_link}{Link}} \texorpdfstring{$\ast$}{*} get\+All\+Links (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Getter function for the all\+Links array. 
+
+\begin{DoxyReturn}{Returns}
+Returns the all\+Links array 
+\end{DoxyReturn}
+\Hypertarget{links_8c_aac014a849a0e96f6345ac63bf869a965}\index{links.c@{links.c}!getNumberOfLinks@{getNumberOfLinks}}
+\index{getNumberOfLinks@{getNumberOfLinks}!links.c@{links.c}}
+\doxysubsubsection{\texorpdfstring{getNumberOfLinks()}{getNumberOfLinks()}}
+{\footnotesize\ttfamily \label{links_8c_aac014a849a0e96f6345ac63bf869a965} 
+int get\+Number\+Of\+Links (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Getter function for the number\+Of\+Links variable. 
+
+\begin{DoxyReturn}{Returns}
+Returns the number\+Of\+Links variable 
+\end{DoxyReturn}
+\Hypertarget{links_8c_a9cc23a2dd865ea815a1d7581f74d9db5}\index{links.c@{links.c}!isLinkOverlap@{isLinkOverlap}}
+\index{isLinkOverlap@{isLinkOverlap}!links.c@{links.c}}
+\doxysubsubsection{\texorpdfstring{isLinkOverlap()}{isLinkOverlap()}}
+{\footnotesize\ttfamily \label{links_8c_a9cc23a2dd865ea815a1d7581f74d9db5} 
+int is\+Link\+Overlap (\begin{DoxyParamCaption}\item[{int}]{row1}{, }\item[{int}]{column1}{, }\item[{int}]{row2}{, }\item[{int}]{column2}{, }\item[{int}]{row3}{, }\item[{int}]{column3}{, }\item[{int}]{row4}{, }\item[{int}]{column4}{}\end{DoxyParamCaption})}
+
+
+
+Returns if two possible links overlap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row1} & The row index of the 1st point \\
+\hline
+{\em row2} & The row index of the 2nd point \\
+\hline
+{\em row3} & The row index of the 3rd point \\
+\hline
+{\em row4} & The row index of the 4th point \\
+\hline
+{\em column1} & The column index of the 1st point \\
+\hline
+{\em column2} & The column index of the 2nd point \\
+\hline
+{\em column3} & The column index of the 3rd point \\
+\hline
+{\em column4} & The column index of the 4th point \\
+\hline
+\end{DoxyParams}
+\Hypertarget{links_8c_aadb20396c6554aa2a952f2925e2c4927}\index{links.c@{links.c}!printAllLinks@{printAllLinks}}
+\index{printAllLinks@{printAllLinks}!links.c@{links.c}}
+\doxysubsubsection{\texorpdfstring{printAllLinks()}{printAllLinks()}}
+{\footnotesize\ttfamily \label{links_8c_aadb20396c6554aa2a952f2925e2c4927} 
+void print\+All\+Links (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Prints all the links. 
+
+
+
+\label{doc-var-members}
+\Hypertarget{links_8c_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{links_8c_aa914a9c72053d35ea0cd4a4f0704b1ed}\index{links.c@{links.c}!allLinks@{allLinks}}
+\index{allLinks@{allLinks}!links.c@{links.c}}
+\doxysubsubsection{\texorpdfstring{allLinks}{allLinks}}
+{\footnotesize\ttfamily \label{links_8c_aa914a9c72053d35ea0cd4a4f0704b1ed} 
+\mbox{\hyperlink{struct_link}{Link}} all\+Links\mbox{[}500\mbox{]}}
+
+\Hypertarget{links_8c_a11569a6107c2e70a909e93a038bc2628}\index{links.c@{links.c}!numberOfLinks@{numberOfLinks}}
+\index{numberOfLinks@{numberOfLinks}!links.c@{links.c}}
+\doxysubsubsection{\texorpdfstring{numberOfLinks}{numberOfLinks}}
+{\footnotesize\ttfamily \label{links_8c_a11569a6107c2e70a909e93a038bc2628} 
+int number\+Of\+Links = 0}
+
