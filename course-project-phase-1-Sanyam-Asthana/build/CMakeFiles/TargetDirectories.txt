@@ -1,0 +1,3 @@
+/Users/sanyam/Documents/TwixT/build/CMakeFiles/twikc.dir
+/Users/sanyam/Documents/TwixT/build/CMakeFiles/edit_cache.dir
+/Users/sanyam/Documents/TwixT/build/CMakeFiles/rebuild_cache.dir
