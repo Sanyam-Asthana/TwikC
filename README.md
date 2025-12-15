@@ -22,6 +22,10 @@ TwixT is a 2-player game in which players have to place their pegs on a 24x24 gr
 ## Introduction to TwikC
 TwikC is a lightweight recreation of the 2-player game TwixT, made entirely on C. The interface is implemented completely on CLI.
 
+<br>
+<img src="screenshot.png" style="width: 50%">
+<p>Screenshot of TwikC in action</p>
+
 ## Usage
 1) Clone the repository
 2) Open the repository directory you just cloned
