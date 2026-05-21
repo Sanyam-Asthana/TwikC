@@ -22,6 +22,10 @@ TwixT is a 2-player game in which players have to place their pegs on a 24x24 gr
 ## Introduction to TwikC
 TwikC is a lightweight recreation of the 2-player game TwixT, made entirely on C. The interface is implemented completely on CLI.
 
+<br>
+<img src="screenshot.png" style="width: 50%">
+<p>Screenshot of TwikC in action</p>
+
 ## Usage
 1) Clone the repository
 2) Open the repository directory you just cloned
@@ -32,6 +36,14 @@ TwikC is a lightweight recreation of the 2-player game TwixT, made entirely on C
 ## Dependencies
 - **locale.h (Pre-installed)**
 - **holi.h (Contained in the repository):** The header file "holi.h" contains macro definitions for ANSI escape sequences for terminal colors
+
+## Technical Details
+- Used BFS (Breadth First Search) to determine if a player has won
+- Used vector products to determine if there is a cross-link
+- Made completely platform independent using `#ifdef` clauses
+- Implemented a modern UI in the constraint of CLI using unicode characters
+- Completely modularised code with clear JavaDocs for every function
+- Completely documented using Doxygen (https://twikc.netlify.app)
 
 ## Contributors
 - **Sanyam-Asthana**
